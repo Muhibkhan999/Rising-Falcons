@@ -12,35 +12,56 @@
 			justify-content: center;
 			align-items: center;
 			min-height: 100vh;
-			background: linear-gradient(45deg, #77b, #99c);
-			font-family: 'Trebuchet MS', Verdana, Arial, sans-serif;
+			background: linear-gradient(135deg, #6366f1, #8b5cf6, #d946ef);
+			font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 		}
 		.redirect-container {
 			text-align: center;
-			padding: 2rem;
-			background: rgba(255, 255, 255, 0.9);
-			border-radius: 10px;
-			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			padding: 3rem;
+			background: rgba(255, 255, 255, 0.95);
+			border-radius: 20px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+			backdrop-filter: blur(10px);
+			transform: translateY(0);
+			transition: transform 0.3s ease;
+		}
+		.redirect-container:hover {
+			transform: translateY(-5px);
 		}
 		h1 {
-			color: #333;
-			margin-bottom: 1rem;
+			color: #1f2937;
+			margin-bottom: 1.5rem;
+			font-size: 2.2rem;
+			font-weight: 600;
 		}
 		.loader {
-			width: 50px;
-			height: 50px;
-			border: 5px solid #f3f3f3;
-			border-top: 5px solid #77b;
+			width: 60px;
+			height: 60px;
+			border: 6px solid #f3f3f3;
+			border-top: 6px solid #6366f1;
 			border-radius: 50%;
-			animation: spin 1s linear infinite;
-			margin: 20px auto;
+			animation: spin 1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+			margin: 25px auto;
 		}
 		@keyframes spin {
 			0% { transform: rotate(0deg); }
 			100% { transform: rotate(360deg); }
 		}
 		p {
-			color: #666;
+			color: #4b5563;
+			font-size: 1.1rem;
+			line-height: 1.6;
+			margin: 0.8rem 0;
+		}
+		a {
+			color: #6366f1;
+			text-decoration: none;
+			font-weight: 500;
+			transition: color 0.2s ease;
+		}
+		a:hover {
+			color: #4f46e5;
+			text-decoration: underline;
 		}
 	</style>
 	<meta http-equiv="refresh" content="3; url=uiparadox.co.uk/templates/cricket-pulse/v3/index.html">
